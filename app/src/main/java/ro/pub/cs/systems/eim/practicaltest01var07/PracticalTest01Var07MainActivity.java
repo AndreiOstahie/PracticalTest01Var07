@@ -42,6 +42,7 @@ public class PracticalTest01Var07MainActivity extends AppCompatActivity {
                 int rand4 = intent.getIntExtra(Constants.RAND4, -1);
                 editText4.setText(String.valueOf(rand4));
             }
+            System.out.printf("I received something");
         }
     }
 

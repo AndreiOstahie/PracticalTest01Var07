@@ -23,6 +23,7 @@ public class ProcessingThread extends Thread {
 
     @Override
     public void run() {
+        Log.d("[TAG]", "Thread has started! PID: " + Process.myPid() + " TID: " + Process.myTid());
         while (isRunning) {
             sendMessage();
             sleep();

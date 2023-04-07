@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PracticalTest01Var07MainActivity">
+    tools:context=".PracticalTest01Var07SecondaryActivity">
 
 
     <GridLayout
@@ -30,8 +30,7 @@
             android:layout_row="0"
             android:layout_column="0"
             android:width="150dp"
-            android:inputType="number"
-            android:saveEnabled="false"/>
+            android:enabled="false"/>
         <EditText
             android:id="@+id/editText_cell_2"
             android:layout_width="wrap_content"
@@ -39,8 +38,7 @@
             android:layout_row="0"
             android:layout_column="1"
             android:width="150dp"
-            android:inputType="number"
-            android:saveEnabled="false"/>
+            android:enabled="false"/>
         <EditText
             android:id="@+id/editText_cell_3"
             android:layout_width="wrap_content"
@@ -48,8 +46,7 @@
             android:layout_row="1"
             android:layout_column="0"
             android:width="150dp"
-            android:inputType="number"
-            android:saveEnabled="false"/>
+            android:enabled="false"/>
         <EditText
             android:id="@+id/editText_cell_4"
             android:layout_width="wrap_content"
@@ -57,23 +54,34 @@
             android:layout_row="1"
             android:layout_column="1"
             android:width="150dp"
-            android:inputType="number"
-            android:saveEnabled="false"/>
+            android:enabled="false"/>
 
     </GridLayout>
 
-    <Button
-        android:id="@+id/button_navigate"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Set" />
-    <Button
-        android:id="@+id/button_service"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Service" />
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sum"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/button_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Product" />
+    </LinearLayout>
+
 
 </LinearLayout>
+
+
 
